@@ -1,0 +1,19 @@
+This is a small ptyhon script which generates SVG themes for cairo-clock. 
+The generated theme looks like the old 90s BBC clock. Generated theme included.
+
+Install:
+
+mkdir -p ~/.cairo-clock/themes
+cp -R bbc1 ~/.cairo-clock/themes/
+
+Restart cairo-clock and select theme "bbc1"
+
+If you desire a different colour scheme (eg BBC2 brown/white), just edit the python 
+source and regenerate the theme.
+
+Limitations:
+
+Cairo-clock requires the clock hands always centred in the window. That means 
+if you want to include the text "BBC1" below the clock, you need to pad the 
+theme on all 4 sides, making the actual clock quite small.
+
